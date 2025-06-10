@@ -1,0 +1,354 @@
+/* Основные цвета темы */
+.root {
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 2px;
+    -fx-base: #1e1e1e;
+    -fx-background: #2d2d2d;
+    -fx-control-inner-background: #252525;
+    -fx-control-inner-background-alt: #2d2d2d;
+    -fx-accent: #007aff;
+    -fx-focus-color: #007aff;
+    -fx-faint-focus-color: rgba(0, 122, 255, 0.1);
+    -fx-text-fill: #e0e0e0;
+    -fx-text-base-color: #e0e0e0;
+    -fx-selection-bar: #007aff;
+    -fx-selection-bar-non-focused: #3a3a3a;
+}
+
+/* Текстовые элементы */
+.label {
+    -fx-text-fill: #e0e0e0;
+}
+
+.text-field, .password-field, .text-area, .combo-box {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+    -fx-border-color: #4d4d4d;
+    -fx-border-radius: 4;
+    -fx-border-width: 1;
+    -fx-padding: 4 8;
+}
+
+.text-field:focused, .password-field:focused, .text-area:focused {
+    -fx-border-color: -fx-focus-color;
+    -fx-effect: dropshadow(gaussian, -fx-faint-focus-color, 10, 0, 0, 0);
+}
+
+/* Кнопки */
+.button {
+    -fx-background-color: #404040;
+    -fx-background-radius: 4;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5 15;
+    -fx-border-width: 0;
+}
+
+.button:hover {
+    -fx-background-color: #505050;
+}
+
+.button:pressed {
+    -fx-background-color: #303030;
+}
+
+.button:focused {
+    -fx-background-color: #505050;
+    -fx-effect: dropshadow(gaussian, -fx-faint-focus-color, 10, 0, 0, 0);
+}
+
+.button.default {
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: white;
+}
+
+.button.default:hover {
+    -fx-background-color: #0088ff;
+}
+
+/* Таблицы */
+.table-view {
+    -fx-background-color: #404040;
+    -fx-selection-bar: #4d4d4d;
+    -fx-selection-bar-non-focused: #0088ff;
+
+}
+
+.table-view .column-header {
+    /*-fx-background-color: #3a3a3a;*/
+    /*-fx-text-fill: #e0e0e0;*/
+    /*-fx-border-color: #4d4d4d;*/
+    -fx-table-header-visible: false
+}
+
+.table-view .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #e0e0e0;
+    -fx-border-color: transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-control-inner-background;
+}
+
+.table-row-cell:even {
+    -fx-background-color: -fx-control-inner-background-alt;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: white;
+}
+
+/* Вкладки */
+.tab-pane {
+    -fx-background-color: -fx-background;
+}
+
+.tab {
+    -fx-background-color: #3a3a3a;
+    -fx-background-insets: 0 1 0 1;
+    -fx-background-radius: 4 4 0 0;
+    -fx-padding: 5 15;
+}
+
+.tab:selected {
+    -fx-background-color: -fx-background;
+    -fx-border-color: -fx-accent;
+    -fx-border-width: 0 0 2 0;
+}
+
+.tab-label {
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Меню */
+.menu-bar {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #1e1e1e;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu {
+    -fx-background-color: transparent;
+}
+
+.menu-item {
+    -fx-background-color: #3a3a3a;
+}
+
+.menu-item:hover {
+    -fx-background-color: #505050;
+}
+
+.context-menu {
+    -fx-background-color: #3a3a3a;
+    -fx-border-color: #4d4d4d;
+}
+
+/* Списки */
+.list-view {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-border-color: #4d4d4d;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e0e0e0;
+}
+
+.list-cell:odd {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-cell:selected {
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: white;
+}
+
+/* Полосы прокрутки */
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #4d4d4d;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #5d5d5d;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 0;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/* Разделители */
+.split-pane {
+    -fx-background-color: -fx-background;
+}
+
+.split-pane-divider {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 0 1 0 1;
+
+}
+
+/* Деревья */
+
+.tree-view {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-border-color: #4d4d4d;
+    -fx-indent: 10; /* Основной отступ для дочерних элементов */
+    -fx-show-fields-in-branch: true;
+    -fx-tree-line-color: derive(gray, 20%);
+    -fx-tree-line-style: dashed;
+    -fx-tree-line-visible: true;
+}
+
+/* Убираем лишние отступы у TreeCell */
+.tree-cell {
+    -fx-indent: 10;
+    -fx-text-fill: #e0e0e0;
+    -fx-padding: 2 0 2 2; /* Верх | Право | Низ | Лево */
+}
+
+
+/* Стиль для иконки раскрытия/сворачивания (если нужно уменьшить) */
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-padding: 0.35em; /* Размер стрелки */
+    -fx-shape: "M 0 -3 L 4 0 L 0 3 Z"; /* Форма стрелки (горизонтальная) */
+}
+
+.tree-cell:selected {
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: white;
+}
+
+.tree-cell .tree-disclosure-node {
+    -fx-padding: 0 0 0 5;
+}
+
+.tree-cell .connector {
+    -fx-stroke: #999999;
+    -fx-stroke-width: 1;
+    -fx-stroke-dash-array: 2 2;
+}
+
+
+.tree-view .scroll-bar:vertical {
+    -fx-background-color: #252525;
+    -fx-pref-width: 12px;
+}
+
+/* Стили для горизонтальной полосы прокрутки */
+.tree-view .scroll-bar:horizontal {
+    -fx-background-color: #252525;
+    -fx-pref-height: 12px;
+}
+
+/* Стиль бегунка (thumb) */
+.tree-view .scroll-bar .thumb {
+    -fx-background-color: #545456;
+    -fx-background-radius: 6px;
+}
+
+.tree-view .scroll-bar .thumb:hover {
+    -fx-background-color: #a8a8a8;
+}
+
+/* Кнопки увеличения/уменьшения */
+.tree-view .scroll-bar .increment-button,
+.tree-view .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 1px;
+}
+
+.tree-view .scroll-bar .increment-arrow,
+.tree-view .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0;
+}
+
+/* CheckBox и RadioButton */
+.check-box, .radio-button {
+    -fx-text-fill: #e0e0e0;
+}
+
+.check-box .box {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-border-color: #4d4d4d;
+    -fx-border-radius: 2;
+}
+
+/*.check-box .box, .radio-button .radio {*/
+/*    -fx-background-color: -fx-control-inner-background;*/
+/*    -fx-border-color: #4d4d4d;*/
+/*    -fx-border-radius: 2;*/
+/*}*/
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.radio-button:disabled {
+    -fx-opacity: 1.0;
+}
+
+.radio-button:selected .dot {
+    -fx-mark-color: #b2de00;
+}
+
+.radio-button:disabled .dot {
+    -fx-mark-color: red; /* Красный цвет */
+    -fx-opacity: 1.0; /* Полная непрозрачность */
+}
+
+.radio-button:disabled:selected > .dot {
+    -fx-mark-color: red;
+    -fx-opacity: 1;
+}
+
+/* Slider */
+.slider .track {
+    -fx-background-color: #4d4d4d;
+}
+
+.slider .thumb {
+    -fx-background-color: white;
+}
+
+/* ProgressBar */
+/*.progress-bar {*/
+/*    -fx-accent: -fx-accent;*/
+/*}*/
+
+/*.progress-bar .track {*/
+/*    -fx-background-color: #4d4d4d;*/
+/*}*/
+
+/* Tooltip */
+.tooltip {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #e0e0e0;
+    -fx-border-color: #4d4d4d;
+}
+
+.spinner {
+    -fx-alignment: center;
+}
+

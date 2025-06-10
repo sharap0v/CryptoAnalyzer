@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextArea fx:id="textArea" layoutX="6.0" layoutY="30.0" prefHeight="368.0" prefWidth="499.0" />
+      <Button layoutX="518.0" layoutY="43.0" mnemonicParsing="false" onAction="#openFile" prefWidth="150.0" text="Открыть файл" />
+      <Button layoutX="518.0" layoutY="93.0" mnemonicParsing="false" onAction="#decrypt" prefWidth="150.0" text="Расшифровать" />
+      <Button layoutX="518.0" layoutY="68.0" mnemonicParsing="false" onAction="#encrypt" prefWidth="150.0" text="Зашифровать" />
+      <Text fx:id="filePath" fill="WHITE" layoutX="31.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button layoutX="518.0" layoutY="118.0" mnemonicParsing="false" onAction="#saveFile" prefWidth="150.0" text="Сохранить в файл" />
+      <ProgressBar fx:id="progressBar" layoutX="6.0" layoutY="405.0" prefHeight="18.0" prefWidth="499.0" progress="0.0" />
+      <Text layoutX="526.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ключ" />
+      <TextField fx:id="keyTextField" layoutX="563.0" layoutY="160.0" prefHeight="25.0" prefWidth="106.0" />
+      <Button layoutX="526.0" layoutY="229.0" mnemonicParsing="false" onAction="#bruteForce" prefHeight="90.0" prefWidth="150.0" text="BruteForce" />
+   </children>
+</AnchorPane>
